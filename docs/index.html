@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dSocial.js</title>
+  <script src="../dist/dsocial.min.js"></script>
+</head>
+<body>
+
+<script>
+  // Init WebSocket client
+  var client = new dsocial.Client('wss://greatchain.dpays.io');
+
+  // Get accounts
+  client.call('get_accounts', ['jared'], function(err, result) {
+    console.log(err, result);
+  });
+</script>
+
+</body>
+</html>

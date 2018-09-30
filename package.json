@@ -1,0 +1,31 @@
+{
+  "name": "dsocialjs",
+  "version": "1.0.2",
+  "description": "A lightweight JavaScript library for dSocial",
+  "repository": {
+    "url": "git://github.com/dsocialnetwork/dsocialjs.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "main": "dist/dsocial.cjs.js",
+  "module": "dist/dsocial.es.js",
+  "browser": "dist/dsocial.umd.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "bluebird": "^3.5.1",
+    "rollup": "^0.55.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-replace": "^2.0.0"
+  }
+}
